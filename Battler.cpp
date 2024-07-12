@@ -24,10 +24,10 @@ int main()
     
     Attribute attr;
     
-   
 
     cout << "Initial score: " << attr.getScore() << endl;
- attr.modifyScore(5);
+    attr.modifyScore(5);
+
     cout << "Score after modification: " << attr.getScore() << endl;
     cout << "Modifier: " << attr.getModifier() << endl;
     attr.resetCurrentScore();

@@ -13,15 +13,16 @@ private:
 	int baseScore;
 	int currentScore;
 public:
-	Attribute();
-	Attribute(string name);
-	Attribute(string name, int value);
-	void setName(string name);
-	string getName() const;
-	int getScore() const;
-	void modifyScore(int mod);
-	int getModifier()const;
-	void resetCurrentScore();
+    Attribute();
+    Attribute(string name);
+    Attribute(string name, int value);  
+    string getName() const;
+    void setName(string name);
+    int getScore() const;
+    void modifyScore(int mod);
+    int getModifier() const;
+    void resetCurrentScore();
 };
+
 #endif
 

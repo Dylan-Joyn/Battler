@@ -11,9 +11,12 @@ Attribute::Attribute(string name) : name(name) {
 	baseScore = die1.getFaceValue() + die2.getFaceValue() + die3.getFaceValue();
 	currentScore = baseScore;
 }
+Attribute::Attribute(string name, int value) : name(name), baseScore(value), currentScore(value) {}
 
+string Attribute::getName() const {
+    return name;
 
-
+}
 string Attribute::getName() const {
 		return name;
 }

@@ -6,19 +6,19 @@
 using namespace std;
 
 
-Die::Die()
-{
-	srand(static_cast<unsigned int>(time(0)));
-	roll();
+Die::Die(int sides) : sides(sides) {
+    srand(static_cast<unsigned int>(time(0)));
+    roll();
+}
+
+void Die::roll() {
+    faceValue = rand() % sides + 1;
+}
+
+int Die::getFaceValue() const {
+    return faceValue;
 }
 
 int Die::getSides() const {
-	return SIDES;
-}
-
-int Die::getFaceValue() const{
-	return faceValue;
-}
-void Die::roll() {
-	faceValue = rand() % SIDES + 1;
+    return sides;
 }

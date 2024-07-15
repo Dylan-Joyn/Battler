@@ -8,9 +8,9 @@ class Die
 {
 private:
 	int faceValue;
-	const int SIDES =6;
+	int sides;
 public:
-	Die();
+	Die(int sides =6);
 	void roll();
 	int getFaceValue() const;
 	int getSides() const;
